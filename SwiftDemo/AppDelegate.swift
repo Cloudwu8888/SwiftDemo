@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        //MSMobileCenter.setLogUrl("https://in-staging-south-centralus.staging.avalanch.es")
-        MSMobileCenter.start("5bdff2ca-bc48-4e97-8a3a-42b211946437", withServices:[
+        MSMobileCenter.setLogUrl("https://in-staging-south-centralus.staging.avalanch.es")
+        MSMobileCenter.start("84bf8f1d-efd2-4417-81a2-48c08ccb18e4", withServices:[
             MSAnalytics.self,
             MSCrashes.self
             ])
