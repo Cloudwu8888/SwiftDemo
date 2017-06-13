@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import MobileCenter;
+import MobileCenterAnalytics;
+import MobileCenterCrashes;
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        //MSMobileCenter.setLogUrl("https://in-staging-south-centralus.staging.avalanch.es")
+        MSMobileCenter.start("5bdff2ca-bc48-4e97-8a3a-42b211946437", withServices:[
+            MSAnalytics.self,
+            MSCrashes.self
+            ])
         // Override point for customization after application launch.
         return true
     }

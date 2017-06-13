@@ -1,0 +1,7 @@
+Cartfile.resolved
+Carthage/
+Podfile.lock
+Pods/
+VSMobileCenterExtensions.framework/
+build/
+ddp/
